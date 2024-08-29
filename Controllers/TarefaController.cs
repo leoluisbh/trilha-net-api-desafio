@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using TrilhaApiDesafio.Context;
 using TrilhaApiDesafio.Models;
 
+
 namespace TrilhaApiDesafio.Controllers
 {
     [ApiController]
@@ -18,9 +19,7 @@ namespace TrilhaApiDesafio.Controllers
         [HttpGet("{id}")]
         public IActionResult ObterPorId(int id)
         {
-            // TODO: Buscar o Id no banco utilizando o EF
-            // TODO: Validar o tipo de retorno. Se não encontrar a tarefa, retornar NotFound,
-            // caso contrário retornar OK com a tarefa encontrada
+            //var tarefa = _context.Tarefa.Find(id);
             return Ok();
         }
 
